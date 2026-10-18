@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background-color: #0f172a; 
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#weather-form {
+  display: flex;
+  gap: 10px;
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5);
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  background: #0f172a;
+  color: white;
+  outline: none;
+}
+
+input:focus {
+  border-color: #3b82f6;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#loading {
+  text-align: center;
+  color: #94a3b8;
+  font-weight: bold;
+}
+
+#weather-card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.temperature-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  margin: 15px 0;
+}
+
+#temperature {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.toggle-btn {
+  background: transparent;
+  color: #94a3b8;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+}
+
+.toggle-btn:hover {
+  background: #334155;
+  color: white;
+}
+
+.weather-details {
+  display: flex;
+  gap: 20px;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
