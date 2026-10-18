@@ -111,3 +111,34 @@ button:hover {
   font-size: 0.9rem;
 }
 
+
+   /* Responsive Mobile Layout */
+  
+@media (max-width: 480px) {
+  #weather-form {
+    flex-direction: column; /* Stack input and button vertically */
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  button {
+    width: 100%; /* Full width button for easier tapping */
+  }
+  
+  #weather-card {
+    padding: 20px 15px;
+  }
+  
+  #temperature {
+    font-size: 3rem; /* Scale down the massive temperature text */
+  }
+
+  .weather-details {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+
+
